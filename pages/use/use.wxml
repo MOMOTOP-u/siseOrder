@@ -1,0 +1,16 @@
+<view class='container'>
+  <view class='myuse'>
+    <view class='myuse_top'>
+      <text class='cancel'>取消</text>
+      <view class='myuse_business'>菠萝堂食有限公司</view>
+      <view class='myuse_name'>5元草莓新地</view>
+      <view class='circle_left'></view>
+      <view class='circle_right'></view>
+    </view>
+     <view class='myuse_main'>
+      <image src='../../image/code.png' />
+      <view>2700 5017 8797 560</view>
+      <view class='myuse_bottom'>点击出示给店员扫描二维码即可使用</view>
+    </view> 
+  </view>
+</view>

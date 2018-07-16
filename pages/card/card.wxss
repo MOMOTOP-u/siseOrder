@@ -1,0 +1,54 @@
+/* pages/card/card.wxss */
+.onecard{
+  width:90%;
+  height:231rpx;
+  background:#fff1bc;
+  margin:0 auto;
+  position:relative;
+  margin-top:14rpx;
+  border:1px solid #b8e4c9;
+  border-radius:21rpx;
+}
+.card_null{
+  background:white;
+  position:absolute;
+  border-radius:50%;
+  top:11rpx;
+  left:22rpx;
+  width:50rpx;
+  height:50rpx;
+  border:1px solid #ffaaa5;
+}
+.card_logo{
+  width:144rpx;
+  height:122rpx;
+  border-radius:50%;
+  border:2px solid #bad7df;
+  margin-top:47rpx;
+  margin-left:56rpx;
+}
+.card_business{
+  position:absolute;
+  top:48rpx;
+  left:220rpx;
+  font-size:30rpx;
+  color:#374955;
+}
+.card_name{
+  position:absolute;
+  top:107rpx;
+  left:220rpx;
+  color:#ff8260;
+}
+.card_get{
+  width:60px;
+  height:58rpx;
+  font-size:30rpx;
+  background:#ff8260;
+  position:absolute;
+  right:9rpx;
+  top:166rpx;
+  color:white;
+  line-height:58rpx;
+  letter-spacing:0.3em;
+}

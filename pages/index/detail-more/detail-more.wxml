@@ -1,0 +1,69 @@
+<view>
+  <!-- 左侧菜单 -->
+  <view class="list-left-menu">
+    <view wx:for="{{listData}}" wx:key="unique" class="{{index==activeIndex?'list-left-menu-box-selected':'list-left-menu-box-unselect'}}" data-index="{{index}}" bindtap='selectMenu'>
+      <view class="list-menu-name">{{item.otype}}</view>
+    </view>
+  </view>
+  <!-- 右侧菜单 -->
+  <scroll-view scroll-y="true" style='height:1200rpx;' bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view class="content" id="a{{index}}" wx:for="{{listData}}" wx:key="unique" wx:for-item="itemtitle">
+      <view class='list-tab'>{{itemtitle.otype}}</view>
+      <view class='content-list' wx:for="{{listAllData}}" wx:key="unique" wx:for-item="items" wx:for-index="indexs">
+      <block wx:if="{{items.otype==itemtitle.otype}}">
+            <view class='list-image-box'>
+            <image class="list-image" src='{{items.opic}}'></image>
+          </view>
+          <view class='issue-name'>
+            <view>{{items.oname}}</view>
+            <view style='margin-top:20rpx;color:red;font-size:15px;'>
+              ¥ {{items.oprice}}.00
+              <i class="iconfont icon-jiahao2fill plus-icon" data-oid="{{items.id}}" data-index="{{indexs}}" bindtap="addToCart" ></i>
+            </view>
+          </view>  
+      </block>
+          
+      </view>
+    </view>
+  </scroll-view>
+  
+ 
+  <!-- 购物车  -->
+<!-- <view class="drawer_screen" bindtap="showCartList" data-statu="close" wx:if="{{showCart}}"></view>
+<view class="cartlist-float" wx:if="{{showCart}}">
+  <view style='background:#F0F0F0;height:30px'>
+    <label class='label-cart-bar'>
+      <label style='padding:5px'>已选商品</label>
+    </label>
+    <label class='icon-clear' bindtap='clearCartList'>
+      <i class="iconfont icon-lajitong"></i>
+      <label class="label-clear">清空购物车</label>
+    </label>
+  </view>
+  <scroll-view scroll-y="true" class="{{cartList.length>5?'cart-scroll-list':''}}">
+
+    <view class='cart-list-box' wx:for="{{cartList}}" wx:key="unique" style='border-bottom:1px #E3E3E3 solid'>
+      <view class='list-info'>
+        <view>{{item.name}}</view>
+        <view class='list-info-size'>{{item.detail}}</view>
+      </view>
+      <view style='width:50%;padding:10px;'>
+        <view style='float:right'>
+          <label class='activity-color'>¥ {{item.sum}}.00</label>
+          <i class="iconfont icon-jian icon-li-circle" data-index="{{index}}" bindtap="decNumber"></i>
+          {{item.number}}
+          <i class="iconfont icon-jiahao2fill activity-color font20" data-index="{{index}}" bindtap="addNumber"></i>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+ -->
+<!-- 优惠宣传条 -->
+<!-- <view class='cut-bar' wx:if="{{sumMonney==0&&loading}}">
+  <label>满20立减3元(手机点餐专享)</label>
+</view>
+<view class='cut-bar' wx:if="{{sumMonney<20&&sumMonney!=0&&loading}}">
+  <label>满20立减3元,还差{{20-sumMonney}}元,去凑单></label>
+  -->
+ </view>   

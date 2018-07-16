@@ -1,0 +1,22 @@
+<view class="container text-center">
+  <image class="logo" src="https://logopond.com/logos/6906dd12abc5b6a08013d92e5ff9ae15.png"></image>
+  
+  <form bindsubmit="formSubmit">
+    <view class="section">
+      <image src='../../../image/user.png' />
+      <input type="text" name="username" placeholder="用户名"/>
+    </view>
+    <view class="section">
+      <image src='../../../image/tel.png' />
+      <input type="text" name="telephone" placeholder="电话"/>
+    </view>
+    <view class="section">
+      <image src='../../../image/pass.png' />
+      <input type="password" name="password" placeholder="密码" />
+    </view>
+   
+    <view class="btn-area">
+      <button formType="submit">注册</button>
+    </view>
+  </form>
+</view>

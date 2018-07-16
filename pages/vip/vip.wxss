@@ -1,0 +1,99 @@
+/* pages/vip/vip.wxss */
+page{
+  background:#f6f4f4;
+}
+.mycard{
+ background:#feeb97;
+  width:83%;
+  height:310rpx;
+  margin:0 auto;
+  border-radius:22rpx;
+  box-shadow:3px 3px #919190;
+  margin-top:18rpx;
+  position:relative;
+}
+.mycard_img{
+  width:169rpx;
+  height:158rpx;
+  border-radius:50%;
+  margin-top:10rpx;
+  margin-left:15rpx;
+  border:1px solid #ff7100;
+}
+.mycard .pineapple{
+  color:#ff6600;
+  font-size:64rpx;
+  font-family:STXingkai;
+  position:absolute;
+  margin-left:20rpx;
+}
+.mycard_total{
+  position:absolute;
+  top:81rpx;
+  color:#606470;
+  font-size:29rpx;
+}
+.mycard text{
+  color:#606470;
+  font-size:29rpx;
+}
+.mycard_name{
+  position:absolute;
+  top:65rpx;
+  left:212rpx;
+}
+.mycard_total{
+  position:absolute;
+  top:105rpx;
+  left:212rpx;
+}
+.mycard_use{
+  position:absolute;
+  bottom:68rpx;
+  left:33rpx;
+}
+.mycard_enter{
+  position:absolute;
+  left:35rpx;
+  bottom:10px;
+}
+.mycard .mycard_vip{
+  position:absolute;
+  right:17rpx;
+  bottom:30rpx;
+  font-size:42rpx;
+  color:#ff6600;
+}
+
+.can_use{
+  width:100%;
+  height:100rpx;
+  line-height:100rpx;
+  text-align:center;
+  margin-top:20rpx;
+}
+.can_use text{
+  color:#474744;
+  margin-right:52rpx;
+}
+.mycard_list{
+  height:100%;
+  width:92%;
+  border:1px dotted #374955;
+  margin:0 auto;
+  background:white;
+  border-radius:12rpx;
+}
+.mycard_list view{
+  padding-left:18px;
+  border-bottom:1px dotted #265961;
+  padding-bottom:33rpx;
+  padding-top:33rpx;
+  color:#265961;
+}
+.mycard_list text{
+  float:right;
+  margin-right:54rpx;
+  font-size:50rpx;
+  margin-top:-10rpx;
+}

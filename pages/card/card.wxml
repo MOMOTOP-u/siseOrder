@@ -1,0 +1,30 @@
+<!--pages/card/card.wxml-->
+<view class='onecard'>
+  <view class='card_null'></view>
+  <image class='card_logo' src='https://logopond.com/logos/6906dd12abc5b6a08013d92e5ff9ae15.png' />
+  <text class='card_business'>菠萝(中国)堂食有限公司</text>
+  <text class='card_name'>5元草莓新地</text>
+  <button class='card_get' bindtap='onTapToUse'>兑换</button>
+</view>
+<view class='onecard'>
+<view class='card_null'></view>
+  <image class='card_logo' src='https://logopond.com/logos/6906dd12abc5b6a08013d92e5ff9ae15.png' />
+  <text class='card_business'>菠萝(中国)堂食有限公司</text>
+  <text class='card_name'>9元咖啡拿铁(中杯)</text>
+  <button class='card_get' bindtap='onTapToUse'>兑换</button>
+</view>
+<view class='onecard'>
+<view class='card_null'></view>
+  <image class='card_logo' src='https://logopond.com/logos/6906dd12abc5b6a08013d92e5ff9ae15.png' />
+  <text class='card_business'>菠萝(中国)堂食有限公司</text>
+  <text class='card_name'>法式齐乐圈新地</text>
+  <button class='card_get' bindtap='onTapToUse'>兑换</button>
+</view>
+<view class='onecard'>
+<view class='card_null'></view>
+  <image class='card_logo' src='https://logopond.com/logos/6906dd12abc5b6a08013d92e5ff9ae15.png' />
+  <text class='card_business'>菠萝(中国)堂食有限公司</text>
+  <text class='card_name'>6元那么大鲜柠可乐</text>
+  <button class='card_get' bindtap='onTapToUse'>兑换</button>
+</view>
+

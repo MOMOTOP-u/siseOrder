@@ -1,0 +1,22 @@
+<!--pages/vip/vip.wxml-->
+<view class='mycard'>
+  <image class='mycard_img' src='https://logopond.com/logos/6906dd12abc5b6a08013d92e5ff9ae15.png' />
+  <text class='pineapple'>pineapple</text>
+  <text class='mycard_name'>{{username}} ></text>
+  <text class='mycard_total'>累计积分43  ></text>
+  <text class='mycard_use'>可用积分28 ></text>
+  <text class='mycard_enter'>进入积分商城兑换优惠券></text>
+  <text class='mycard_vip'>VIP卡</text>
+</view>
+<view class='can_use'>
+  <text style='margin-left:29rpx;'>可用积分:28</text>
+  <text>|</text>
+  <text>优惠券:9</text>
+</view>
+<view class='mycard_list'>
+  <view catchtap='onTapToOrder'>餐厅订单查询<text>></text></view>
+  <view catchtap='onTapToCard'>我的卡券<text>></text></view>
+  <view>积分使用规则<text>></text></view>
+  <view>使用条款<text>></text></view>
+  <view catchtap='onTapToLogout'>注销<text>></text></view>
+</view>

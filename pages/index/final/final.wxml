@@ -1,0 +1,50 @@
+<!--pages/order/detail/detail.wxml-->
+<view>
+  <image class='card-time' src='../../../image/time.png'></image>
+  <view class='go-center go-top-10' >
+    <view class="card-box">
+      <view class="card-fetch">
+        <view class="card-left-bar">
+          <label>取餐号</label>
+        </view>
+      </view>
+      <view>
+        <view class='go-top-10'>
+          <label class='number-card'>A105</label>
+          <label class='statu-card'>快速配餐中</label>
+        </view>
+        <view class='note-card'>
+          为你尽快配餐,请凭此号到前台取餐
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 订单详情 -->
+  <view class='order-info'>
+    <view class='order-info-title'>订单详情</view>
+    <view class='cart-list-box' wx:for="{{cartList.data}}" wx:key="unique">
+      <view class='list-info'>
+        <view>{{item.oname}}</view>
+      </view>
+      <view class='cart-list-num'>x {{item.num}}</view>
+      <view style='width:50%;padding:10px;'>
+        <view style='float:right'>
+          <view>¥ {{item.num * item.oprice}}.00</view>
+        </view>
+      </view>
+    </view>
+
+    <view class='order-sum'>
+      <label>总计 </label>
+      <label class='order-sum-number activity-color'>¥ {{sum}}</label>
+    </view>
+  </view>
+  <view class='order-info'>
+    <view class='order-info-title flex-display' >订单号码
+      <view class='order-info-number'>AB235436547651456</view>
+    </view>
+    <view class='order-info-title flex-display' >订单时间
+      <view class="order-info-number">2018-5-1 11:33:00</view>
+    </view>
+  </view>
+</view>

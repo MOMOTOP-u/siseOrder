@@ -1,0 +1,123 @@
+@import "../../wxSearchView/wxSearchView.wxss";
+.container{
+  padding: 0px;
+}
+swiper{
+     width:100%;     
+ }
+
+  swiper image{
+     width:100%;
+ }
+
+ /* 促销 */
+ .sale{
+   width: 100%;
+   height:130rpx;
+   padding-top:23rpx;
+   display: flex;  
+   flex-direction: row; 
+   text-align:center; 
+ }
+ .sale image{
+   width:80rpx;
+   height:80rpx;
+ }
+.sale view{
+  flex:1;
+}
+.salefont{
+  font-size:13px;
+  color:gray;
+  width:185rpx;
+  height:52rpx;
+}
+/* 推荐 */
+.interview{
+  margin-top: 30rpx;
+  background: #F2F2F0;
+  width: 100%;
+  height:953rpx;
+}
+.int_title{
+  width:100%;
+  height:91rpx;
+  display:flex;
+  position:relative;
+  line-height:91rpx;
+}
+.int_champion{
+  width:83rpx;
+  height:83rpx;
+}
+.int_titlename{
+  color:gray;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+.int_more{
+  position:absolute;
+  right:27rpx;
+  color:#fa350f;
+}
+
+.int_no1{
+  position:absolute;
+  top:-24rpx;
+  left:-29rpx;
+}
+.int_no1 image{
+  width:100rpx;
+  height:100rpx;
+}
+.int_food1{
+  width:700rpx;
+  height:500rpx;
+  margin-left:30rpx;
+  box-shadow:3rpx 3rpx 3rpx 3rpx gray;
+  position:relative;
+  margin-top:31rpx;
+}
+.int_food1 .int_foodpic{
+  width:700rpx;
+}
+.int_price{
+  width:700rpx;
+  height:106rpx;
+  margin-left:29rpx;
+  background: white;
+  box-shadow:3rpx 3rpx 3rpx 3rpx gray;
+  position:relative;
+
+}
+.int_name{
+  font-size:14px;
+  margin-left:14rpx;
+}
+.int_money{
+  color:red;
+  margin-left:14rpx;
+}
+.int_buy{
+  background:#ff5f5f;
+  color:white;
+  width:122rpx;
+  font-size:13px;
+  height:65rpx;
+  line-height:65rpx;
+  text-align:center;
+  border-radius:12rpx;
+  position:absolute;
+  top:18rpx;
+  right:14rpx;
+}
+/* 推荐2 */
+.interview2{
+  margin-top:0rpx;
+  background:#F2F2F0;
+  width:100%;
+  height:632rpx;
+}
+.interview2 .int_food1{
+  margin-top: 0rpx;
+}

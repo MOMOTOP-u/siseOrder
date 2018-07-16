@@ -1,0 +1,24 @@
+<view class="container text-center">
+  <image class="logo" src="https://logopond.com/logos/6906dd12abc5b6a08013d92e5ff9ae15.png"></image>
+  <view class="login-title">
+    <button data-num="1" class="login-btn {{_num==1?'activ':''}}" bindtap='loginBtn'>用户登录</button>
+    <button data-num="2" class="login-btn {{_num==2?'activ':''}}" bindtap="passwordBtn">新用户注册</button>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view class="section">
+      <image src='../../image/user.png' />
+      <input type="tel" name="username" placeholder="用户名"/>
+    </view>
+    <view class="section">
+      <image src='../../image/pass.png' />
+      <input type="password" name="password" placeholder="密码" />
+    </view>
+    <view class="login-text" wx:if="{{_num==1}}">
+      温馨提示：未注册菠萝食堂帐号的用户号，登录时将登录失败，请与管理员联系
+      <navigator>《用户服务协议》</navigator>
+    </view>
+    <view class="btn-area">
+      <button formType="submit">登陆</button>
+    </view>
+  </form>
+</view>

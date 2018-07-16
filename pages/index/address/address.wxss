@@ -1,0 +1,22 @@
+
+.formlist{
+  display:block;
+  height:110rpx;
+  width:100%;
+  border-bottom:4rpx solid #eeeeee;
+  padding-left:25rpx;
+  padding-top:37rpx;
+  line-height:110rpx;
+}
+.form-box input{
+  color:#999;
+  display:inline-block;
+}
+.form-box .input-placeholder{
+    color: #aaa;
+}
+.form-box button{
+    margin:30rpx 30rpx 0 30rpx;
+    background:linear-gradient(to bottom right, #ffaf87,orange);
+    border-radius:60rpx;
+}

@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/index/order/order",
+    "pages/index/address/address",
+    "pages/vip/vip",
+    "pages/use/use",
+    "pages/card/card",
+    "pages/index/post-comment/post-comment",
+    "pages/index/register/register",
+    "pages/index/cart/cart",
+    "pages/index/detail-more/detail-more",
+    "pages/mysetting/mysetting",
+    "pages/index/final/final",
+    "pages/index/detail-buy/detail-buy",
+    "pages/search/search",
+    "pages/logout/logout"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#4A6141",
+    "color": "#333",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/icon/shouye.png",
+        "selectedIconPath": "image/icon/shouye_yes.png"
+      },
+      {
+        "pagePath": "pages/index/detail-more/detail-more",
+        "text": "更多",
+        "iconPath": "image/icon/more.png",
+        "selectedIconPath": "image/icon/more_yes.png"
+      },
+      {
+        "pagePath": "pages/vip/vip",
+        "text": "设置",
+        "iconPath": "image/icon/mysetting.png",
+        "selectedIconPath": "image/icon/mysetting_yes.png"
+      }
+    ]
+  }
+}

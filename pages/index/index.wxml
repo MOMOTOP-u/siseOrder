@@ -1,0 +1,72 @@
+<!--index.wxml-->
+<!-- 搜索框start -->
+<view class="container">
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input type="text" class="weui-search-bar__input" disabled='true' placeholder="搜索入口" bindtap="wxSearchTab" />
+      </view>
+    </view>
+  </view>
+  <view>{{ searchValue}}</view>
+  <!-- 搜索框end -->
+  <!-- 广告栏start -->
+  <swiper catchtap="onSwiperTap" vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000" circular="true">
+    <swiper-item>
+      <image mode="widthFix" src='http://pic.616pic.com/bg_w1180/00/05/49/e9NUDzO6vm.jpg!/fw/1120' />
+    </swiper-item>
+    <swiper-item>
+      <image mode="widthFix" src="http://pic.616pic.com/bg_w1180/00/18/57/18a3I0uSme.jpg!/fw/1120" />
+    </swiper-item>
+    <swiper-item>
+      <image mode="widthFix" src="http://pic.616pic.com/bg_w1180/00/12/88/A6mnLMDeVa.jpg!/fw/1120" />
+    </swiper-item>
+  </swiper>
+  <!-- 广告栏end -->
+  <!-- 促销start -->
+  <view class='sale'>
+    <view class='salesize'>
+      <image src='../../image/sale.png' />
+      <view class='salefont'>优惠券</view>
+    </view>
+    <view class='salesize'>
+      <image src='../../image/gift.png' />
+      <view class='salefont'>大礼包</view>
+    </view>
+    <view class='salesize'>
+      <image src='../../image/one.png' />
+      <view class='salefont'>一元抢</view>
+    </view>
+    <view class='salesize'>
+      <image src='../../image/coin.png' />
+      <view class='salefont'>抢金币</view>
+    </view>
+  </view>
+  <!-- 促销end -->
+
+  <!-- 推荐start -->
+    <image mode='widthFix' src='http://pic.616pic.com/bg_w1180/00/03/48/41NITgrJYK.jpg!/fw/1120'></image>
+    <view class='int_title'>
+      <image class='int_champion' src='../../image/champion.png'/>
+      <view class='int_titlename'>月销量榜</view>
+      <view class='int_more' catchtap='onTapToMore'>>>more</view>
+    </view>
+ 
+  <!-- 推荐2start -->
+  <!-- http://pic.616pic.com/bg_w1180/00/08/99/68smrvIckn.jpg!/fw/1120 -->
+  <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx">
+    <view catchtap="onTapToDetail" data-post-id="{{item.id}}" class='interview2'>
+      <view class='int_food1'>
+        <image class='int_foodpic' mode='aspectFit' src='{{item.opic}}'></image>
+      </view>
+      <view class='int_price'>
+        <view class='int_name'>{{item.oname}}</view>
+        <view class='int_money'>¥{{item.oprice}}</view>
+        <view class='int_buy'>购买</view>
+      </view>
+    </view>
+  </block>
+  <!-- 推荐2end -->
+
+</view>

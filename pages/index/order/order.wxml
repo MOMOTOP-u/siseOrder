@@ -1,0 +1,28 @@
+<view class="main">
+
+  <view class="orders-box">
+    <view wx:for="{{cartList.data}}" wx:key="index" class="orders-list">
+      <view wx:if="{{item.num != 0}}">
+        <image class="orders-thumb" src="{{item.opic}}"></image>
+        <view class="orders-pro-name">{{item.oname}}</view>
+        <view class="orders-pro-price">￥{{item.oprice}}</view>
+        <view class="orders-count-num">×{{item.num}}</view>
+      </view>
+      <!-- <block wx:elif="{{item.num == 0}}"></block> -->
+      </view>
+    </view>
+    
+<navigator url="../address/address">
+        <view wx:if="{{hasAddress}}" class="orders-address">
+            <text class="orders-address-name">收货人: {{address.name}}</text>
+            <text class="orders-address-phone">电话: {{address.phone}}</text>
+          <view class="orders-address-detail">地址：{{address.region[0] +address.region[1]+address.region[2] + address.detail}}</view>
+        </view>
+        <view wx:else class="orders-no-address">添加收货地址</view>
+    </navigator>
+
+    <view class="orders-footer">
+      <view class="orders-footer-total">付款合计：￥{{sum}}</view>
+      <view class="orders-footer-btn" bindtap="toPay">付款</view>
+    </view>
+  </view>

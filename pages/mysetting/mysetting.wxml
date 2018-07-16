@@ -1,0 +1,29 @@
+<view class="main">
+  <view class="header">
+    <image src="https://logopond.com/logos/6906dd12abc5b6a08013d92e5ff9ae15.png" class="thumb"></image>
+    <view class="myname">
+      <view class="nickname">{{cartList.data[0].username}}</view>
+      <view class="about">关于我们</view>
+    </view>
+    <!-- <text class="about"></text> -->
+  </view>
+
+  <view class='line'>
+  </view>
+
+  <view class="orders-box">
+    <view class="orders">我的订单</view>
+    <view class="orders-list" wx:for="{{cartList.data}}" wx:key="index">
+      <view class="orders-number">订单编号：{{item.id}}</view>
+      <view class="orders-detail">
+        <image src="{{item.opic}}"></image>
+        <view class="">{{item.oname}}</view>
+        <view class="">{{item.num}}</view>
+        <text class="orders-status">¥{{item.total}}</text>
+      </view>
+    </view>
+    <view class="orders-footer">
+      <text>实付：￥{{sum}}</text>
+    </view>
+  </view>
+</view>
